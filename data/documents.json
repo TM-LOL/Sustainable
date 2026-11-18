@@ -1,0 +1,11 @@
+{
+  "categories": [
+    {"slug":"grant-application","name":"Grant Application and Proposal Development","description":"Proposal and concept note templates, guidelines and calls for proposals."},
+    {"slug":"budgeting-finance","name":"Grant Budgeting and Financial Management","description":"Budget templates, justifications, financial reports, revision forms, expenditure tracking."},
+    {"slug":"project-management","name":"Project Implementation and Management","description":"Implementation guidelines, work plans, Gantt charts, monitoring forms, risk assessment."},
+    {"slug":"reporting","name":"Reporting and Documentation","description":"Progress, annual and final report templates, completion forms, output reporting."},
+    {"slug":"procurement","name":"Procurement and Resource Management","description":"Procurement and equipment requisition forms, inventory templates, procurement guidelines."},
+    {"slug":"policies","name":"Policies and Guidelines","description":"Grant management, ethics, research policy, intellectual property and technology transfer."}
+  ],
+  "documents": []
+}
