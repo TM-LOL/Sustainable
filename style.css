@@ -128,3 +128,13 @@ body.gate header,body.gate footer{display:none}body.gate .signin{min-height:100v
 .vm{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
 .vm .card{border-top-color:var(--gold)}.vm .card p{font-size:16px;color:var(--fg)}
 .motto{margin:28px 0 0;padding:18px 22px;border-left:6px solid var(--gold);background:#fbf6e6;color:var(--navy-d)}
+
+/* org chart and people */
+.org{display:flex;flex-direction:column;align-items:center;gap:0;margin:24px 0}
+.on{display:block;text-align:center;padding:12px 20px;border:2px solid var(--navy);border-radius:6px;background:#fff;color:var(--navy-d);font-weight:700;max-width:520px;width:100%}
+.on small{display:block;font-weight:500;color:var(--mut);margin-top:2px}
+.on.hi{background:var(--navy-d);color:#fff;border-color:var(--gold)}.on.hi small{color:var(--gold-l)}
+.oa{width:3px;height:22px;background:var(--gold)}
+.og{display:grid;gap:10px;width:100%;grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}.og .on{max-width:none;font-size:14px;padding:10px 12px}.og a.on:hover{border-color:var(--gold);background:#fbf6e6}
+.person{align-items:flex-start}.avatar{position:relative;width:96px;height:96px;border-radius:50%;overflow:hidden;background:var(--navy);display:grid;place-items:center;border:3px solid var(--gold)}
+.avatar span{color:var(--gold);font-size:30px;font-weight:800}.avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
