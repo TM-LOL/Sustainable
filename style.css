@@ -123,3 +123,8 @@ footer h4{display:inline-block;border-bottom:3px solid var(--gold);padding-botto
 .flogo{height:64px;width:auto;background:#fff;border-radius:6px;padding:4px;margin-bottom:12px;display:block}
 body.gate header,body.gate footer{display:none}body.gate .signin{min-height:100vh}
 .signin .vis{width:100%;margin-top:10px;padding:13px;border-radius:8px;background:transparent;border:2px solid var(--gold);color:var(--navy-d);font:700 15px inherit;cursor:pointer}.signin .vis:hover{background:var(--gold)}
+
+/* vision / mission / objectives */
+.vm{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.vm .card{border-top-color:var(--gold)}.vm .card p{font-size:16px;color:var(--fg)}
+.motto{margin:28px 0 0;padding:18px 22px;border-left:6px solid var(--gold);background:#fbf6e6;color:var(--navy-d)}
