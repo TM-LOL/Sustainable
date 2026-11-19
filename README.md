@@ -1,4 +1,4 @@
-# SE-CoE website (GitHub Pages)
+# Sustainable Energy Center of Excellence website (GitHub Pages)
 
 A static site: no server, no database, nothing to install.
 
@@ -20,3 +20,12 @@ A static site: no server, no database, nothing to install.
 
 ## Important: everything here is public
 GitHub Pages cannot password-protect files. Never upload confidential grant applications, financial records or personal data. Only publish documents you are happy for anyone to download.
+
+## Members: login, private documents, admin uploads (optional)
+Without this, the site is fully public. To switch member login on you need a free Supabase project (database + file storage + login):
+1. Create a project at supabase.com. In **SQL Editor**, run `supabase/setup.sql`.
+2. **Authentication > Providers > Email**: turn OFF "Allow new users to sign up". Add members under **Authentication > Users > Add user** (tick auto-confirm).
+3. Make yourself administrator by running the last (commented) line of `setup.sql` with your email.
+4. **Project Settings > API**: copy the Project URL and the `anon` public key into `assets/config.js`. Never use the `service_role` key.
+5. Commit. Log in at #login; administrators then see an Upload form on the Resources page.
+Files are stored in a private bucket; Supabase checks permissions on its servers for every download.

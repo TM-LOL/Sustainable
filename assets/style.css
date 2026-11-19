@@ -18,7 +18,7 @@ nav .login{margin-left:8px;padding:8px 14px;border:2px solid var(--gold);border-
 nav>div:hover .dd,nav>div:focus-within .dd{display:block}
 .dd a{display:block;padding:9px 16px;font-size:14px}.dd a:hover{background:var(--alt);color:var(--navy)}
 #mb{display:none;background:none;border:1px solid var(--gold);color:var(--gold);padding:7px 14px;border-radius:4px;font:600 14px inherit;cursor:pointer}
-@media(max-width:1040px){#mb{display:block}nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--navy-d);flex-direction:column;align-items:stretch;max-height:80vh;overflow:auto;padding:6px 20px 16px}nav.open{display:flex}nav a.t{padding:12px 0}.dd{display:block;position:static;background:none;box-shadow:none;border:0;border-left:2px solid var(--gold);margin-left:4px}.dd a{color:#cfd3e0}nav .login{margin:8px 0 0;text-align:center}}
+@media(max-width:1180px){#mb{display:block}nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--navy-d);flex-direction:column;align-items:stretch;max-height:80vh;overflow:auto;padding:6px 20px 16px}nav.open{display:flex}nav a.t{padding:12px 0}.dd{display:block;position:static;background:none;box-shadow:none;border:0;border-left:2px solid var(--gold);margin-left:4px}.dd a{color:#cfd3e0}nav .login{margin:8px 0 0;text-align:center}}
 .hero{position:relative;overflow:hidden;color:#fff;padding:92px 0 80px;background:linear-gradient(125deg,var(--navy-d),var(--navy))}
 .hero:before,.hero:after{content:"";position:absolute;border-radius:50%;border:40px solid rgba(184,146,58,.2)}
 .hero:before{width:520px;height:520px;right:-140px;top:-120px}.hero:after{width:260px;height:260px;right:200px;bottom:-150px;border-width:24px;border-color:rgba(217,219,224,.12)}
@@ -72,7 +72,7 @@ nav a.t{position:relative;font-size:13px}
 nav a.t:after{content:"";position:absolute;left:9px;right:9px;bottom:16px;height:3px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .25s}
 nav a.t:hover:after,nav a.on:after{transform:scaleX(1)}
 nav .login{background:var(--gold);color:var(--navy-d);border-color:var(--gold)}nav .login:hover{background:var(--gold-l)}
-@media(max-width:1040px){nav a.t:after{display:none}}
+@media(max-width:1180px){nav a.t:after{display:none}}
 .dd{box-shadow:0 16px 36px rgba(18,28,66,.22)}.dd a{padding:11px 18px}
 .hero{min-height:580px;display:flex;align-items:center}
 .kicker{display:flex;align-items:center;gap:14px;color:var(--gold);font-weight:700;letter-spacing:.2em;text-transform:uppercase;font-size:13px;margin-bottom:18px}
@@ -90,3 +90,18 @@ h2{font-size:clamp(28px,3.8vw,40px)}.rule{width:96px;height:6px}
 .pagehead h1:after{content:"";display:block;width:80px;height:5px;background:var(--gold);margin-top:14px}
 footer h4{display:inline-block;border-bottom:3px solid var(--gold);padding-bottom:6px;font-size:14px}
 .rv{opacity:0;transform:translateY(20px);transition:opacity .6s,transform .6s}.rv.in{opacity:1;transform:none}
+
+.brand{font-size:15px;max-width:400px}.brand small{font-size:11px}
+@media(max-width:560px){.brand{font-size:12.5px}.brand small{display:none}}
+
+/* sign-in page */
+.signin{min-height:calc(100vh - 78px);display:grid;place-items:center;padding:40px 16px;background:linear-gradient(rgba(18,28,66,.88),rgba(18,28,66,.93)),url(../assets/images/hero.jpg) center/cover,#121c42}
+.signin .box{width:100%;max-width:440px;background:#f4f1e9;border-radius:16px;padding:30px 32px;box-shadow:0 24px 60px rgba(0,0,0,.35);text-align:center;border-top:8px solid var(--gold)}
+.signin .logo{width:150px;height:auto;background:#fff;border-radius:12px;padding:8px;margin:0 auto 14px;display:block}
+.signin h1{font-size:24px;line-height:1.25;color:var(--navy-d);margin:0 0 8px}.signin .sub{color:#666;margin:0 0 22px}
+.signin form{text-align:left}.signin label{font-size:15px;color:#111}
+.signin input[type=email],.signin input[type=password],.signin input[type=text]{padding:13px 14px;border-radius:10px;border:1px solid #777;font-size:16px}
+.signin input:focus{outline:none;border:2px solid var(--gold);box-shadow:0 0 0 3px rgba(197,160,74,.45)}
+.signin .show{display:flex;gap:8px;align-items:center;font-weight:500;margin-bottom:18px}.signin .show input{width:auto;margin:0}
+.signin .go{width:100%;padding:14px;border-radius:8px;background:var(--navy-d);color:#fff;font:700 17px inherit;border:0;cursor:pointer}.signin .go:hover{background:var(--navy)}
+.signin .back{display:block;margin-top:16px;font-size:14px;color:var(--navy);text-align:center}
